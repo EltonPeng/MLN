@@ -34,7 +34,7 @@ def word2vec(batch_gen):
 
     # Step 3: define the inference
     # get the embed of input words using tf.nn.embedding_lookup
-    embed = tf.nn.embedding_lookup(matrix, x, name='embed')
+    embed = tf.nn.embedding_lookup(matrix, X, name='embed')
 
     # Step 4: construct variables for NCE loss
     # tf.nn.nce_loss(weights, biases, labels, inputs, num_sampled, num_classes, ...)
