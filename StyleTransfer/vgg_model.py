@@ -61,7 +61,7 @@ def _avgpool(prev_layer):
     Hint for choosing strides and kszie: choose what you feel appropriate
     """
     avgpool = tf.nn.avg_pool(prev_layer, ksize = [1, 2, 2, 1], strides = [1, 2, 2, 1], padding = 'SAME')
-    pass
+    return avgpool
 
 def load_vgg(path, input_image):
     """ Load VGG into a TensorFlow model.
